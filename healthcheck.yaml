@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: ami
-          image: kuberhealthy/ami-check:latest
+          image: kuberhealthy/ami-check:sha-<short-sha>
           imagePullPolicy: IfNotPresent
           env:
             - name: AWS_REGION

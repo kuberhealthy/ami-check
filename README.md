@@ -60,7 +60,7 @@ spec:
     spec:
       containers:
         - name: ami
-          image: kuberhealthy/ami-check:latest
+          image: kuberhealthy/ami-check:sha-<short-sha>
           imagePullPolicy: IfNotPresent
           env:
             - name: AWS_REGION
@@ -80,3 +80,8 @@ spec:
 ```
 
 A full install bundle with a ServiceAccount is available in `healthcheck.yaml`.
+
+## Image Tags
+
+- `sha-<short-sha>` tags are published on every push to `main`.
+- `vX.Y.Z` tags are published when a matching Git tag is pushed.
