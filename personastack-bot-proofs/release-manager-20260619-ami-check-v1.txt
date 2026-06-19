@@ -1,0 +1,1 @@
+Kuberhealthy Release Manager proof for issue #3, stamp 20260619-ami-check-v1.
